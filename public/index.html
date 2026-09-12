@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OPPY — CEO Mission Control</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Opportuna</p>
+          <h1>OPPY — AI Chief of Staff</h1>
+        </div>
+        <div class="status-pill" id="aiMode">Cargando</div>
+      </header>
+
+      <section class="command-center" aria-label="Centro de mando">
+        <div class="metrics" id="metrics"></div>
+
+        <section class="assistant-panel" aria-label="Conversación con OPPY">
+          <div class="assistant-header">
+            <div>
+              <p class="eyebrow">Centro de mando</p>
+              <h2>VER → ENTENDER → PRIORIZAR → ACTUAR → VERIFICAR</h2>
+            </div>
+          </div>
+
+          <div class="quick-actions" aria-label="Acciones rápidas">
+            <button type="button" data-prompt="OPPY, ¿qué debería atender primero hoy?">Priorizar hoy</button>
+            <button type="button" data-prompt="Crea una tarea para hacer seguimiento a Constructora Horizonte hoy.">Crear tarea demo</button>
+          </div>
+
+          <div class="chat-log" id="chatLog" aria-live="polite"></div>
+
+          <form class="composer" id="composer">
+            <label class="sr-only" for="messageInput">Mensaje para OPPY</label>
+            <input id="messageInput" name="message" autocomplete="off" value="OPPY, ¿qué debería atender primero hoy?" />
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </section>
+
+      <section class="grid-two">
+        <section class="panel">
+          <div class="section-heading">
+            <p class="eyebrow">Prioridades</p>
+            <h2>Acciones ejecutivas</h2>
+          </div>
+          <div class="priority-list" id="priorityList"></div>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading">
+            <p class="eyebrow">Ejecución</p>
+            <h2>Tareas creadas y verificadas</h2>
+          </div>
+          <div class="task-list" id="taskList"></div>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
