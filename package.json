@@ -5,8 +5,8 @@
   "description": "OPPY AI Chief of Staff MVP for Opportuna.",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "node mvp.js",
+    "dev": "node mvp.js"
   },
   "engines": {
     "node": ">=18"
